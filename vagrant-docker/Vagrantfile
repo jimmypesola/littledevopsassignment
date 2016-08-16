@@ -1,0 +1,10 @@
+Vagrant.configure("2") do |config|
+  config.vm.provider "docker" do |d|
+    d.build_dir = "./dockerbuild"
+    d.ports = ["2222:22","80:80","443:443"]
+    d.has_ssh = true
+  end
+  config.ssh.username = "administrator"
+  config.ssh.private_key_path = "./keys/id_rsa"
+  config.ssh.port = 22
+end
