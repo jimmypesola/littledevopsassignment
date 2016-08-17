@@ -31,13 +31,19 @@ installed.
 
 To open an SSH connection to the container:
 
-  vagrant ssh
+  `vagrant ssh`
 
 
 - HTTP port is 80 and SSH port is 2222
 
+## Tools and versions used:
+- Ubuntu 14.04
+- Docker version 1.12.0, build 8eab29e
+- Ansible version 2.1.1.0
+- Vagrant version 1.8.5
 
-###### Changelog:
+
+## Changelog:
 * 17-08-2016
   * Crated an Ansible playbook for starting a Jenkins Docker image and forwarding
     the application ports.
