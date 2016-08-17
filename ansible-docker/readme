@@ -1,0 +1,14 @@
+This is a demo for ansible starting up a docker container with Jenkins 
+installed.
+
+To start the container:
+
+  ansible-playbook -i hosts webapp-start.yml
+
+To stop the container:
+
+  ansible-playbook -i hosts webapp-stop.yml
+
+
+- Jenkins HTTP port is 8080 and Jenkins Agent port is 50000.
+

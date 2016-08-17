@@ -1,0 +1,13 @@
+---
+- hosts: local
+  tasks:
+   - name: start jenkins container
+     docker_container:
+        name: my-jenkins
+        image: jenkins
+        state: started
+        volumes: /home/administrator/srv/git/littledevopsassignment/ansible-docker/jenkins_home:/var/jenkins_home
+        ports:
+          - 8080:8080
+          - 50000:50000
+
